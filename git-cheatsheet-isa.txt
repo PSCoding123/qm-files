@@ -1,0 +1,31 @@
+git --version
+
+git config --global user.name "name"
+git config --global user.email "youremail@adress.com"
+
+-contribute to a git project:
+git fork: copy an exisisting project to your git hub account
+git clone: clone an exisiting project to your pc
+git status: shows changed files
+git add . : add some changes
+git commit: change the last commit
+git checkout <file>: Revert a commit (by producing a new commit with contrary changes)
+git pull <remote> <branch> publish local changes on a remote
+git push : delete a branch on the remote
+
+
+- create a repo on your computer:
+make folder -> cd into it
+copy files into folder
+git init
+git status: tells you the changes that have been made
+git add "filename"
+git commit -> file is now saved: test with delete and then
+git checkout -- . (everything is now back to the way it was)
+
+git remote -v: shows you the server adress of where it thinks you want to push to
+git remote set-url origin https://github.com/your-user-name/your-project-name.git : sets the path to where git is supposed to push the files
+
+git push origin <branch> : main, master whatever 
+
+
