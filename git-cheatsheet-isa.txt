@@ -1,13 +1,17 @@
 git --version
 
-git config --global user.name "name"
-git config --global user.email "youremail@adress.com"
+specify settings with git config
+
+username: git config --global user.name "name"
+email adresse: git config --global user.email "youremail@adress.com"
+text editor:  git config --global core.editor notepad
 
 -contribute to a git project:
 git fork: copy an exisisting project to your git hub account
 git clone: clone an exisiting project to your pc
 git status: shows changed files
-git add . : add some changes
+git add . : add all files that have been changed (alternative git add -A)
+git add <filename>: only adds the specified file
 git commit: change the last commit
 git checkout <file>: Revert a commit (by producing a new commit with contrary changes)
 git pull <remote> <branch> publish local changes on a remote
@@ -34,5 +38,14 @@ git add -i : interactivtly select files
 	-> press empty
 	-> quit
 git commit -m "blabla"
+
+
+- merge gist projects:
+git clone "eigenes projekt"
+cd into it
+git remote add changes "anderes projekt"
+git fetch changes
+git merge changes/main
+git push
 
 

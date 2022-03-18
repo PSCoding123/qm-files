@@ -1,9 +1,0 @@
-für markdown: 
-	https://pandoc.org/MANUAL.html
-
-für pdf:
-	pyPDF
-
-Befehle:
-- touch file = echo > file
-- ls = dir
