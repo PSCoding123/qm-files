@@ -24,6 +24,7 @@ copy files into folder
 git init
 git status: tells you the changes that have been made
 git add "filename"
+git restore --staged <file> : to unstage files
 git commit -> file is now saved: test with delete and then
 git checkout -- . (everything is now back to the way it was)
 
