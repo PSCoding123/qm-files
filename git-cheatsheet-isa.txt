@@ -7,16 +7,17 @@ email adresse: git config --global user.email "youremail@adress.com"
 text editor:  git config --global core.editor notepad
 
 -contribute to a git project:
-git fork: copy an exisisting project to your git hub account
-git clone: clone an exisiting project to your pc
+git fork "adresse" : copy an exisisting project to your pc - your own personal copy
+git clone "adresse" : clone an exisiting project to your pc - changes made by contributers will be pushed to the shared project
 git status: shows changed files
 git add . : add all files that have been changed (alternative git add -A)
 git add <filename>: only adds the specified file
-git commit: change the last commit
-git checkout <file>: Revert a commit (by producing a new commit with contrary changes)
-git pull <remote> <branch> publish local changes on a remote
-git push : delete a branch on the remote
-
+git commit -m "text": commit from the staging area to the repo usually requires a message
+git commit -a --allow-empty-message -m '' : possible to set to empty message, but not recommended
+git checkout <file>: restore a file
+git checkout <branch>: switch to another branch
+git pull <remote> <branch> : pull remote changes to local
+git push <remote> <branch> : publish local changes on a remote
 
 - create a repo on your computer:
 make folder -> cd into it
@@ -28,10 +29,9 @@ git restore --staged <file> : to unstage files
 git commit -> file is now saved: test with delete and then
 git checkout -- . (everything is now back to the way it was)
 
-git remote -v: shows you the server adress of where it thinks you want to push to
-git remote set-url origin https://github.com/your-user-name/your-project-name.git : sets the path to where git is supposed to push the files
+git remote -v: shows you the server adress of where it thinks you want to pull/push to
+git remote set-url origin "adresse" : sets the path to where git is supposed to pull/push the files
 
-git push origin <branch> : main, master whatever 
 
 git add -i : interactivtly select files
 	-> choose 4 (untracked)
@@ -47,6 +47,7 @@ cd into it
 git remote add changes "anderes projekt"
 git fetch changes
 git merge changes/<branch> (f.e. main oder Master)
-git push
+git push: from local to remote
+git push origin <branch> : main, master whatever 
 
 
