@@ -38,15 +38,15 @@ git add -i : interactivtly select files
 	-> choose the files you want to select by number
 	-> press empty
 	-> quit
-git commit -m "blabla"
+git commit -m "text"
 
 
-- merge gist projects:
+- merge projects:
 git clone "eigenes projekt"
 cd into it
 git remote add changes "anderes projekt"
 git fetch changes
-git merge changes/main
+git merge changes/<branch> (f.e. main oder Master)
 git push
 
 
