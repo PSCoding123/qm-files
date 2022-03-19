@@ -17,7 +17,7 @@ git commit -a --allow-empty-message -m '' : possible to set to empty message, bu
 git checkout <file>: restore a file
 git checkout <branch>: switch to another branch
 git pull <remote> <branch> : pull remote changes to local
-git push <remote> <branch> : publish local changes on a remote
+git push <remote> <branch> : publish local changes on remote
 
 - create a repo on your computer:
 make folder -> cd into it
